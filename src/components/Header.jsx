@@ -17,7 +17,7 @@ const Header = () => {
       {/* Logo Section */}
       <div className='p-2 m-2'>
         <h1 className="bg-gradient-to-r from-green-500 to-white text-transparent bg-clip-text text-2xl sm:text-3xl font-bold">
-          <Link to='/'>@0xSentinel</Link>
+          <Link to='/'>@0xCipher</Link>
         </h1>
       </div>
 

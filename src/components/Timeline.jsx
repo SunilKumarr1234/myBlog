@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 
-const Tags = () => {
+const Timeline = () => {
   const timelineData = [
     { year: "10-03-2025", event: "Met with Our Alumni (Ajay Shankar (Blockchain Auditor at OtterSec USA), Charan Nomula (Senior Blockchain Engineer at Supra USA), etc." },
     { year: "10-03-2025 - 15-03-2025", event: "Worked on building this Portfolio and stacking Smart Contract (DApp)" },
@@ -37,4 +37,4 @@ const Tags = () => {
   );
 };
 
-export default Tags;
+export default Timeline;
