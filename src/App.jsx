@@ -7,6 +7,7 @@ import WriteUps from './components/WriteUps'
 import Contact from './components/Contact'
 import Timeline from './components/Timeline'
 import PicoCTF from './components/PicoCTF'
+
 function App() {
 
     const appRouter = createBrowserRouter([
@@ -38,10 +39,13 @@ function App() {
             path: '/picoctf-writeups',
             element: <PicoCTF />
         },
-    ])
- return (
-  <RouterProvider router={appRouter}/>
- )
+    ], {
+        basename: '/myBlog'   // 🔥 Add basename here for GitHub Pages
+    })
+
+    return (
+        <RouterProvider router={appRouter} />
+    )
 }
 
 export default App
