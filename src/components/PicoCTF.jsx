@@ -8,11 +8,13 @@ const PicoCTF = () => {
 
   const downloadPDF = (category) => {
     const fileName = `${category}.pdf`
-    const pdfPath = `/pdfs/${fileName}`
+    const pdfPath = `${import.meta.env.BASE_URL}pdfs/${fileName}` // ✅ Correct Path for Vite + GitHub Pages
     const link = document.createElement('a')
     link.href = pdfPath
     link.download = fileName
+    document.body.appendChild(link)  // 🔥 Important for some mobile browsers
     link.click()
+    document.body.removeChild(link)  // Clean up after download
   }
 
   return (
