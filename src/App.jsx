@@ -7,6 +7,7 @@ import WriteUps from './components/WriteUps'
 import Contact from './components/Contact'
 import Timeline from './components/Timeline'
 import PicoCTF from './components/PicoCTF'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -42,7 +43,9 @@ function App() {
     ])
 
     return (
-        <RouterProvider router={appRouter} />
+            <RouterProvider router={appRouter} />
+         
+        
     )
 }
 

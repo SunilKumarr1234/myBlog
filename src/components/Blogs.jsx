@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
 
 const Post = () => {
   return (
@@ -10,6 +11,7 @@ const Post = () => {
           Blogs will be uploaded soon...
         </h1>
       </div>
+      <Footer/>
     </div>
   );
 };

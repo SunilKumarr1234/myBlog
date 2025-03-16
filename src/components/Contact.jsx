@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from './Header';
+import Footer from './Footer';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,9 +20,7 @@ const Contact = () => {
     try {
       await fetch('https://formspree.io/f/xvgkggry', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
       alert('Message sent successfully!');
@@ -33,49 +32,49 @@ const Contact = () => {
   };
 
   return (
-    <div className='text-white min-h-screen flex flex-col font-mono'>
+    <div className='text-white min-h-screen flex flex-col font-mono pb-10'>
       <Header />
-      <div className='flex flex-1 items-center justify-center px-4 py-6 sm:py-12'> {/* Added padding for spacing */}
+      <div className='flex flex-1 items-center justify-center px-4 py-6'>
         <form 
           onSubmit={handleSubmit} 
-          className=' p-6 rounded-lg shadow-lg w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl bg-black bg-opacity-80'
+          className='p-4 rounded-md shadow-md w-full max-w-sm bg-black bg-opacity-80'
         >
-          <h1 className='text-3xl sm:text-4xl text-green-500 mb-6 text-center'>Contact Me</h1>
+          <h1 className='text-2xl text-green-500 mb-4 text-center'>Contact Me</h1>
 
           {/* Name Field */}
-          <div className='mb-4'>
-            <label className='block text-white mb-1'>Name</label>
+          <div className='mb-3'>
+            <label className='block text-white mb-1 text-sm'>Name</label>
             <input
               type='text'
               name='name'
               value={formData.name}
               onChange={handleChange}
-              className='w-full p-3 rounded bg-gray-500 bg-opacity-10 text-green-400 outline-none focus:ring-2 focus:ring-green-500'
+              className='w-full p-2 rounded bg-gray-500 bg-opacity-10 text-green-400 outline-none focus:ring-1 focus:ring-green-500'
               required
             />
           </div>
 
           {/* Email Field */}
-          <div className='mb-4'>
-            <label className='block text-white mb-1'>Email</label>
+          <div className='mb-3'>
+            <label className='block text-white mb-1 text-sm'>Email</label>
             <input
               type='email'
               name='email'
               value={formData.email}
               onChange={handleChange}
-              className='w-full p-3 rounded bg-gray-500 bg-opacity-10 text-green-400 outline-none focus:ring-2 focus:ring-green-500'
+              className='w-full p-2 rounded bg-gray-500 bg-opacity-10 text-green-400 outline-none focus:ring-1 focus:ring-green-500'
               required
             />
           </div>
 
           {/* Message Field */}
-          <div className='mb-4'>
-            <label className='block text-white mb-1'>Message</label>
+          <div className='mb-3'>
+            <label className='block text-white mb-1 text-sm'>Message</label>
             <textarea
               name='message'
               value={formData.message}
               onChange={handleChange}
-              className='w-full p-3 rounded bg-gray-500 bg-opacity-10 text-green-400 outline-none focus:ring-2 focus:ring-green-500 h-32 resize-none'
+              className='w-full p-2 rounded bg-gray-500 bg-opacity-10 text-green-400 outline-none focus:ring-1 focus:ring-green-500 h-24 resize-none'
               required
             ></textarea>
           </div>
@@ -83,12 +82,13 @@ const Contact = () => {
           {/* Submit Button */}
           <button 
             type='submit' 
-            className='w-full bg-green-900 hover:bg-green-700 p-3 rounded-lg text-white font-semibold transition-all duration-300'
+            className='w-full bg-green-700 hover:bg-green-600 p-2 rounded-md text-white font-semibold transition-all duration-300'
           >
             Send Message
           </button>
         </form>
       </div>
+      <Footer/>
     </div>
   );
 };
