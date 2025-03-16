@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className='font-mono text-white text-center mt-16 px-4 sm:px-0'>
       <div className='p-2 m-2'>
-        <h1 className='text-4xl sm:text-6xl md:text-8xl font-sans leading-snug bg-gradient-to-r from-green-500 to-white text-transparent bg-clip-text '>
+        <h1 className='text-4xl sm:text-6xl md:text-8xl font-sans leading-snug  '>
           SUNIL PITTI
         </h1>
       </div>
