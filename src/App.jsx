@@ -39,9 +39,7 @@ function App() {
             path: '/picoctf-writeups',
             element: <PicoCTF />
         },
-    ], {
-        basename: '/myBlog'   // 🔥 Add basename here for GitHub Pages
-    })
+    ])
 
     return (
         <RouterProvider router={appRouter} />

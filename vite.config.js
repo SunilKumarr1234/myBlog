@@ -3,5 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/myBlog/'  // ✅ Important for GitHub Pages
+  // Removing the base path for Netlify deployment
+  // base: '/myBlog/'
 })
