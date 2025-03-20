@@ -10,7 +10,7 @@ const WriteUps = () => {
       
       {/* Title */}
       <h1 className='mt-10 px-4 text-3xl sm:text-4xl'>
-        CTF WriteUps<span className='text-green-500'>.</span>
+        WriteUps<span className='text-green-500'>.</span>
       </h1>
 
       {/* CTF Links */}

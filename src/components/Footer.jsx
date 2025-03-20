@@ -11,11 +11,11 @@ const Footer = () => {
           <FaLinkedin className='text-3xl text-green-500 hover:text-white  transition-all duration-300' />
         </a>
 
-        <a href="https://github.com/SunilKumarr1234" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/0xC1ph3r-08" target="_blank" rel="noopener noreferrer">
           <FaGithub className='text-3xl text-green-500 hover:text-white  transition-all duration-300' />
         </a>
 
-        <a href="https://x.com/sunil414319" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/C1ph3r0x79888" target="_blank" rel="noopener noreferrer">
           <FaXTwitter className='text-3xl text-green-500 hover:text-white transition-all duration-300' />
         </a>
       </div>
